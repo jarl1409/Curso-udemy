@@ -5,4 +5,7 @@ h1{
 p{
     background-color: brown;
     color: white;
+    padding: 15px;
+    border: 10px solid powderblue;
+    margin: 50px; 
 }
