@@ -1,24 +1,21 @@
-h1 {
-    color: #f07167;
-
+img {
+    box-sizing: content-box;
+    margin: 70px 25%;
+    height: 350px;
 }
 
-a:link {
-    color: #fb8500;
+h1{ 
+    color: #500bad;
+}
+
+a:link, a:visited {
+    background-color: #b5179e;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
     text-decoration: none;
 }
 
-a:visited {
-    color: #219ebc;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #8ecae6;
-    text-decoration: underline;
-}
-
-a:active {
-    color: #023047;
-    text-decoration: underline;
+a:hover, a:active {
+    background-color: #f72585 ;
 }
