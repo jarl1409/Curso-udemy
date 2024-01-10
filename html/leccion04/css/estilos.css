@@ -1,0 +1,41 @@
+body{
+    background-color: #eeeeee;
+}
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+th {
+    padding: 5px 150px 5px 2px;
+    text-align: left;
+    color: aliceblue;
+    background-color: rgba(178, 34, 34, .8);
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+td {
+    text-align: left;
+    padding: 5px 0px 0px 5px;
+}
+
+a {
+    
+}
+
+.SendEmail {
+    text-decoration: none;
+    color: initial;
+}
+
+.SendEmail:hover {
+    color: rgb(33, 116, 180);
+    
+}
+
+.SendEmail:active {
+    color: rgb(38, 255, 0);    
+}
+
+.SendEmail:visited {
+    color: rgb(0, 69, 1);
+}
