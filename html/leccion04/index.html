@@ -1,48 +1,89 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tablas en html</title>
-    <link rel="stylesheet" href="/html/leccion04/css/estilos.css">
-</head>
-<body>
-    <h1>Tabla de clientes</h1>
-    <table>
-        <tr>
-            <th> Nombre</th>
-            <th>Apellido</th>
-            <th>Email</th>
-        </tr>
-        <tr>
-            <td>Jhosep</td>
-            <td>Rodriguez</td>
-            <td >
-                <a class="SendEmail" href="mailto:asdcas@gmail.com">asdcas@gmail.com</a>
-            </td>
-        </tr>
-        <tr>
-            <td>Andrey</td>
-            <td>Lopez</td>
-            <td>
-                <a class="SendEmail" href="mailto:jcnkasj@hotmail.com">jcnkasj@hotmail.com</a>
-            </td>
-        </tr>
-        <tr>
-            <td>Adrian</td>
-            <td>Rodriguez</td>
-            <td>
-                <a class="SendEmail" href="mailto:asascsas@gmail.com">asascsas@gmail.com</a>
-            </td>
-        </tr>
-        <tr>
-            <td>Alexander</td>
-            <td>Lopez</td>
-            <td>
-                <a class="SendEmail" href="mailto:casdcass@gmail.com">casdcass@gmail.com</a>
-            </td>
-        </tr>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactos</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <h1>Listado de clientes</h1>
+    <table class="tabla1">
+      <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Telefono</th>
+        <th>Correo</th>
+        <th>Dirección</th>
+      </tr>
+      <tr>
+        <td>Jhosep</td>
+        <td>Rodriguez</td>
+        <td>3112472118</td>
+        <td>
+          <a href="mailto:">Jhosepandrey203@gmail.com</a>
+        </td>
+        <td>calle 1 #21-21</td>
+      </tr>
+      <tr>
+        <td>Andrey</td>
+        <td>Lopez</td>
+        <td>3208103123</td>
+        <td>
+          <a href="mailto:">Jhosepandrey203@hotmail.com</a>
+        </td>
+        <td>calle 5 #42c-8</td>
+      </tr>
     </table>
-    
-</body>
+    <br /><br /><br />
+    <h1>Listado de clientes</h1>
+    <table class="tabla2">
+      <tr>
+        <th></th>
+        <th class="Usuario">
+          <button class="invisible">Usuario 1</button>
+        </th>
+        <th class="Usuario">
+          <button class="invisible">Usuario 2</button>
+        </th>
+        <th class="Usuario">
+          <button class="invisible">Usuario 3</button>
+        </th>
+      </tr>
+      <tr>
+        <th>Nombre</th>
+        <td>Jhosep</td>
+        <td>Andrey</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>Apellido</th>
+        <td>Rodriguez</td>
+        <td>Lopez</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>Telefono</th>
+        <td>3112472118</td>
+        <td>3208103123</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>Correo</th>
+        <td>
+          <a href="mailto:">Jhosepandrey203@gmail.com</a>
+        </td>
+        <td>
+          <a href="mailto:">Jhosepandrey203@hotmail.com</a>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>Dirección</th>
+        <td>calle 1 #21-21</td>
+        <td>calle 5 #42c-8</td>
+        <td></td>
+      </tr>
+    </table>
+  </body>
 </html>

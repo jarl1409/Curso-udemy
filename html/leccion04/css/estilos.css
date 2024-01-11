@@ -1,41 +1,64 @@
-body{
-    background-color: #eeeeee;
-}
-table, th, td {
-    border-collapse: collapse;
-    border: 1px solid black;
-}
-th {
-    padding: 5px 150px 5px 2px;
-    text-align: left;
-    color: aliceblue;
-    background-color: rgba(178, 34, 34, .8);
-    font-size: 15px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-td {
-    text-align: left;
-    padding: 5px 0px 0px 5px;
+body {
+    background-color: #eee;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0; /* Elimina el margen del cuerpo del documento */
 }
 
 a {
-    
-}
-
-.SendEmail {
     text-decoration: none;
-    color: initial;
+    color: #eee;
 }
 
-.SendEmail:hover {
-    color: rgb(33, 116, 180);
-    
+a:hover {
+    color: rgba(128, 255, 0, 0.5);
 }
 
-.SendEmail:active {
-    color: rgb(38, 255, 0);    
+a:active {
+    color: rgba(128, 255, 0, 1);
 }
 
-.SendEmail:visited {
-    color: rgb(0, 69, 1);
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Agrega un desplazamiento horizontal si el contenido es más ancho que la ventana */
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho y alto total */
+}
+
+.tabla1 th {
+    color: white;
+    background-color: #2e8b57;
+}
+
+.tabla1 td {
+    color: #eee;
+    background-color: #8C362E;
+}
+
+.tabla2 th {
+    background-color: #daa520;
+}
+
+.invisible {
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
+    outline: none;
+    width: 100%;
+    margin: 0;
+    padding: 0; /* Elimina cualquier relleno dentro del botón */
+    border: none; /* Elimina cualquier borde dentro del botón */
+}
+
+.tabla2 td {
+    color: #eee;
+    background-color: #2152D9;
 }
