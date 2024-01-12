@@ -1,64 +1,33 @@
 body {
-    background-color: #eee;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 50px 100px ; /* Elimina el margen del cuerpo del documento */
-}
-
-a {
-    text-decoration: none;
-    color: #eee;
-}
-
-a:hover {
-    color: rgba(128, 255, 0, 0.5);
-}
-
-a:active {
-    color: rgba(128, 255, 0, 1);
-}
-
-.table-container {
-    width: 100%;
-    overflow-x: auto; /* Agrega un desplazamiento horizontal si el contenido es más ancho que la ventana */
+    margin: 50px 100px;
 }
 
 table {
-    border-collapse: collapse;
     width: 100%;
 }
 
-th, td {
+table, th, td {
     border: 1px solid black;
-    padding: 8px;
-    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho y alto total */
+    border-collapse: collapse;
 }
 
-.tabla1 th {
-    color: white;
-    background-color: #2e8b57;
+caption {
+    color: #e63946;
+    font-family: trocchi, serif;
+    font-size: 45px;
+    line-height: 70px;
 }
 
-.tabla1 td {
-    color: #eee;
-    background-color: #8C362E;
-}
+th {
+    color: #f1faee;
+    background-color: #1d3557;
 
-.tabla2 th {
-    background-color: #daa520;
 }
-
-.invisible {
-    background-color: transparent;
-    color: inherit;
-    cursor: pointer;
-    outline: none;
-    width: 100%;
-    margin: 0;
-    padding: 0; /* Elimina cualquier relleno dentro del botón */
-    border: none; /* Elimina cualquier borde dentro del botón */
+/*renglones pares*/
+tr:nth-child(even) {
+    background-color: #f1faee;
 }
-
-.tabla2 td {
-    color: #eee;
-    background-color: #2152D9;
+/*renglones impares*/
+tr:nth-child(odd) {
+    background-color: #a8dadc;
 }
