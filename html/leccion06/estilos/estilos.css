@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
 }
-h1{
+/*identificador css*/
+#titulo_principal{
     color: #f72585;
     text-align: center;
     margin: 15px;
