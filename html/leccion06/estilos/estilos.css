@@ -1,29 +1,26 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-/*identificador css*/
-#titulo_principal{
+.titulo{
     color: #f72585;
-    text-align: center;
-    margin: 15px;
 }
 
-h2{
-    color: #3f37c9;
+.marco{
+    width: 100%;
+    height: 200px;
+    border: 1px solid #f72585;
 }
 
-p{
-    color: #457b9d;
-}
-/*Clase de css*/
-.tarjeta{
-    border: 10px solid #560bad;
-    background-color: #f1faee;
+.centrar {
     text-align: center;
-    margin: 10px 115px;
-    padding: 15px;
 }
- .titulo{
-    color: #f72585;
- }
+
+.boton{
+    background-color: white;
+    border: 2px solid #457b9d;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+.boton:hover{
+    background-color: #457b9d;
+    color: white;
+}
