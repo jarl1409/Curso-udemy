@@ -31,6 +31,19 @@
         <input type="checkbox" name="musica" id="jazz" value="jazz">
         <label for="jazz">Jazz</label><br/>
 
+        <label for="autos">Marca de auto favorita</label><br/>
+        <select name="autos" id="autos">
+            <option value="volvo">Volvo</option>
+            <option value="mazda">Mazda</option>
+            <option value="bmw">BMW</option>
+            <option value="ferrari" selected="true">Ferrari</option>
+            <option value="audi">Audi</option>
+        </select>
+
+        <label for="comentario">Comentario</label><br/>
+        <textarea name="comentario" id="comentario" cols="30" rows="2"
+        >
+        </textarea>
         <input type="submit" value="Enviar"/>
         <input type="submit" formnovalidate="formnovalidate" value="Enviar sin validar"/>
     </form>
