@@ -1,53 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formularios en HTML</title>
-</head>
-<body>
-    <H1>formulario en HTML</H1>
+  </head>
+  <body>
+    <h1>formulario en HTML</h1>
     <form>
-        <label for="nombre">Nombre:</label><br/>
-        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre"
-         required="true"/><br/>
-        <label for="apellido">Apellido:</label><br/>
-        <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido"
-         required="true"/><br/>
-        <label for="email">Email:</label><br/>
-        <input type="email" id="email" name="email"/><br/>
-        <label for="edad">Edad:</label><br/>
-        <input type="number" id="edad" name="edad" step="any"><br/>
+      <fieldset>
+        <legend>Datos Persona</legend>
+        <label for="nombre">Nombre:</label><br />
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="Escribe tu nombre"
+          required="true"
+        /><br />
+        <label for="apellido">Apellido:</label><br />
+        <input
+          type="text"
+          id="apellido"
+          name="apellido"
+          placeholder="Escribe tu apellido"
+          required="true"
+        /><br />
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" /><br />
+        <label for="edad">Edad:</label><br />
+        <input type="number" id="edad" name="edad" step="any" /><br />
 
-        <label>genero:</label><br/>
-        <input type="radio" id="femenino" name="genero" value="femenino"/>
-        <label for="femenino">femenino</label><br/>
-        <input type="radio" name="genero" id="masculino" value="masculino"/>
-        <label for="masculino">masculino</label><br/>
+        <label>genero:</label><br />
+        <input type="radio" id="femenino" name="genero" value="femenino" />
+        <label for="femenino">femenino</label><br />
+        <input type="radio" name="genero" id="masculino" value="masculino" />
+        <label for="masculino">masculino</label><br />
 
-        <label>Musica favorita:</label><br/>
-        <input type="checkbox" name="musica" id="clasica" value="clasica">
-        <label for="clasica">Clasica</label><br/>
-        <input type="checkbox" name="musica" id="jazz" value="jazz">
-        <label for="jazz">Jazz</label><br/>
+        <label>Musica favorita:</label><br />
+        <input type="checkbox" name="musica" id="clasica" value="clasica" />
+        <label for="clasica">Clasica</label><br />
+        <input type="checkbox" name="musica" id="jazz" value="jazz" />
+        <label for="jazz">Jazz</label><br />
 
-        <label for="autos">Marca de auto favorita</label><br/>
+        <label for="autos">Marca de auto favorita</label><br />
         <select name="autos" id="autos">
-            <option value="volvo">Volvo</option>
-            <option value="mazda">Mazda</option>
-            <option value="bmw">BMW</option>
-            <option value="ferrari" selected="true">Ferrari</option>
-            <option value="audi">Audi</option>
+          <option value="volvo">Volvo</option>
+          <option value="mazda">Mazda</option>
+          <option value="bmw">BMW</option>
+          <option value="ferrari" selected="true">Ferrari</option>
+          <option value="audi">Audi</option>
         </select>
 
-        <label for="comentario">Comentario</label><br/>
-        <textarea name="comentario" id="comentario" cols="30" rows="2"
-        >
+        <label for="comentario">Comentario</label><br />
+        <textarea name="comentario" id="comentario" cols="30" rows="2">
         </textarea>
-        <input type="submit" value="Enviar"/>
-        <input type="submit" formnovalidate="formnovalidate" value="Enviar sin validar"/>
+        <input type="submit" value="Enviar" />
+        <input
+          type="submit"
+          formnovalidate="formnovalidate"
+          value="Enviar sin validar"
+        />
+      </fieldset>
     </form>
-
-    
-</body>
+  </body>
 </html>
