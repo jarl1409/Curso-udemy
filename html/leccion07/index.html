@@ -11,6 +11,16 @@
     <form action="mi_servidor" autocomplete="off" target="_blank">
       <fieldset>
         <legend>Datos Persona</legend>
+
+        <label for="idPersona">ID Persona:</label><br />
+        <input
+          type="text"
+          id="idPersona"
+          name="idPersona"
+          placeholder="Escribe tu nombre"
+          readonly="true" value="100"
+        /><br />
+        <input type="hidden" name="sistema" id="sistema" value="SAP"/>
         <label for="nombre">Nombre:</label><br />
         <input
           type="text"
@@ -62,6 +72,7 @@
           formnovalidate="formnovalidate"
           value="Enviar sin validar"
         />
+        <input type="reset" value="Restablecer">
       </fieldset>
     </form>
   </body>
