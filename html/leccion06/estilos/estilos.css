@@ -1,6 +1,11 @@
-h1 {
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
     color: #f72585;
     text-align: center;
+    margin: 15px;
 }
 
 h2{
@@ -10,9 +15,14 @@ h2{
 p{
     color: #457b9d;
 }
-
-div{
+/*Clase de css*/
+.tarjeta{
     border: 10px solid #560bad;
     background-color: #f1faee;
     text-align: center;
+    margin: 10px 115px;
+    padding: 15px;
 }
+ .titulo{
+    color: #f72585;
+ }
