@@ -21,18 +21,23 @@ h1{
 
 .punteado{
     border-style: dotted ;
+    border-width: 10px 5px 3px 2px;
 }
 
 .discontinuo{
     border-style: dashed;
+    border-width: thin; /*puedo usar thin medium o thick*/
 }
 
 .solido{
     border: 10px solid red ;
+    border-width: 10px 5px 2px;
 }
 
 .doble{
     border: 5px double;
+    border-width: 10px 5px;
+    color: blueviolet;
 }
 
 .surco{
