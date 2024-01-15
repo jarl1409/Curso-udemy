@@ -3,28 +3,63 @@ h1{
 }
 
 .rojo{
-    background-color: firebrick;
+    border: 10px solid firebrick;
+    /*background-color: firebrick;*/
 }
 
 .rosa{
-    background-color: hotpink;
+    border: 10px dashed hotpink;
 }
 
 .amarillo{
-    background-color: gold;
-}
-
-.violeta{
-    background-color: blueviolet;
-}
-
-.verde{
-    background-color: lime;
+    border: 10px double gold;
 }
 
 .azul{
-    background-color:turquoise;
+    border: 10px dotted turquoise;
 }
-.rojo, .rosa, .violeta{
-    color: white;
+
+.punteado{
+    border-style: dotted ;
+}
+
+.discontinuo{
+    border-style: dashed;
+}
+
+.solido{
+    border: 10px solid red ;
+}
+
+.doble{
+    border: 5px double;
+}
+
+.surco{
+    border: 10px groove;
+    /*border-width: 10px;*/
+}
+
+.cresta{
+    border: 10px ridge;
+}
+
+.recuadro{
+    border: 10px inset;
+}
+
+.outset{
+    border: 10px outset;
+}
+
+.sin_borde{
+    border: none;
+}
+
+.oculto{
+    border: hidden;
+}
+
+.mixto{
+    border-style: dotted solid dashed double;
 }
