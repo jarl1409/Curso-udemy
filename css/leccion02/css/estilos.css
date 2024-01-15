@@ -2,31 +2,16 @@ h1{
     text-align: center;
 }
 
-.rojo{
-    border: 10px solid firebrick;
-    /*background-color: firebrick;*/
-}
-
-.rosa{
-    border: 10px dashed hotpink;
-}
-
-.amarillo{
-    border: 10px double gold;
-}
-
-.azul{
-    border: 10px dotted turquoise;
-}
-
 .punteado{
     border-style: dotted ;
     border-width: 10px 5px 3px 2px;
+    border-color: crimson hotpink gold lime ;
 }
 
 .discontinuo{
     border-style: dashed;
     border-width: thin; /*puedo usar thin medium o thick*/
+    border-color: hsla(203, 39%, 44%, 0.753);
 }
 
 .solido{
