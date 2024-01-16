@@ -3,15 +3,20 @@ h1{
     color: #e63946;
 }
 
-div{
+.caja1{
     padding: 10px 5px 30px;
-    margin-left: 100px;
+    margin: 30px;
     border: 1px solid blue;
     background-color: #f1faee;
     max-width: 300px;
     box-sizing: border-box;
 }
 
-p.interno{
-    margin-left:inherit;
+.caja2{
+    padding: 10px 5px 30px;
+    margin: 20px;
+    border: 1px solid blue;
+    background-color: #f1faee;
+    max-width: 300px;
+    box-sizing: border-box;
 }
