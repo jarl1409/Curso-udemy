@@ -5,8 +5,9 @@ h1{
 
 div{
     padding: 10px 5px 30px;
-    margin: 20px;
+    margin: 0px;
+    border: 1px solid blue;
     background-color: #f1faee;
-    width: 300px;
+    max-width: 100%;
     box-sizing: border-box;
 }
