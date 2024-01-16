@@ -4,12 +4,9 @@ h1{
 }
 
 div{
-    padding: 10px;
-    border: 15px solid #457b9d;
+    padding: 10px 5px 30px;
     margin: 20px;
     background-color: #f1faee;
     width: 300px;
-    outline: 10px solid #a8dadc;
-    outline-offset: 10px;
-
+    box-sizing: border-box;
 }
