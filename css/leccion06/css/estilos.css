@@ -19,4 +19,7 @@ h1{
 
 .texto{
     text-align: justify;
+    text-indent: 30px;
+    line-height: 1.5;
+    white-space: normal;
     }
