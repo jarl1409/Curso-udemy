@@ -22,10 +22,14 @@ h1{
 
 .fuente_times{
     font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-variant: small-caps;
 }
 
 .fuente_georgia{
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style:italic;
+    font-variant: normal;
 }
 
 .caja.sans-serif{
@@ -34,8 +38,27 @@ h1{
 
 .fuente_arial{
     font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    font-weight: bolder;
 }
 
 .fuente_verdana{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+}
+
+.caja.monospace{
+    background-color: #f15bb5;
+}
+
+.fuente_courier{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.caja.cursive{
+    background-color: #ff8500;
+}
+
+.fuente_lucida{
+    font-family: 'Lucida handwriting', cursive;
 }
