@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sofia&display=swap');
 h1{
     color: #ef476f;
     text-align: center;
     text-transform: uppercase;
     text-shadow: 2px 2px 2px #ced4da;
+    font-family: "sofia", cursive;
 }
 
 .caja{
@@ -20,8 +23,8 @@ h1{
     background-color: #5a189a;
 }
 
-.fuente_times{
-    font-family: 'Times New Roman', Times, serif;
+.fuente_roboto{
+    font-family: roboto, sans-serif;
     font-style: normal;
     font-variant: small-caps;
     font-size: 20px;
