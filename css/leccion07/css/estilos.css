@@ -24,10 +24,13 @@ h1{
 }
 
 .fuente_roboto{
-    font-family: roboto, sans-serif;
+    /*font-family: roboto, sans-serif;
     font-style: normal;
     font-variant: small-caps;
-    font-size: 20px;
+    font-size: 20px;*/
+    /*font: font-style font-variant font-weight *font-size/line-height *font-family;
+    EN ESE ORDEN              */
+    font: italic small-caps bolder 20px roboto, sans-serif;
 }
 
 .fuente_georgia{
