@@ -6,7 +6,7 @@ h1{
     text-shadow: 2px 2px 2px #ced4da;
     letter-spacing: 3px;
     word-spacing: 10px;
-    text-decoration: overline;
+    text-decoration: overline underline;
 }
 .caja{
     padding: 15px;
