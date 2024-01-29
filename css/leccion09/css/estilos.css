@@ -8,3 +8,10 @@ h1,div, p{
 span{
     border: 1px solid blue;
 }
+a{
+    display: block;
+}
+
+li{
+    display: inline;
+}
