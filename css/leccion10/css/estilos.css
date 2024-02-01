@@ -3,6 +3,9 @@ h1{
     color: crimson;
 }
 div{
+    position: static;
+    top: 100px;
+    left: 50px;
     max-width: 50%;
     border: 3px solid firebrick;
     margin: auto;
