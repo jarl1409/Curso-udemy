@@ -3,7 +3,7 @@ h1{
     color: crimson;
 }
 div{
-    position: static;
+    position: relative;
     top: 100px;
     left: 50px;
     max-width: 50%;
