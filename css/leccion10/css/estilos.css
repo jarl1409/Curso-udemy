@@ -5,11 +5,8 @@ h1{
 
 div.contenedor{
     border: 3px dashed greenyellow;
-    margin: auto;
     width: 30%;
     height: 100px;
-    /*overflow: visible;*/
-    /*overflow: hidden;*/
-    /*overflow: scroll;*/
     overflow: auto;
+    float: left;
 }
