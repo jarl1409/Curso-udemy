@@ -3,27 +3,23 @@ h1{
     color: crimson;
 }
 
-div.estatico{
-    position: static;
-    padding: 15px;
-    border: 3px solid greenyellow;
-    background-color: whitesmoke;
+div.contenedor{
+    position: relative;
+    border: 3px dashed greenyellow;
+    margin: auto;
+    width: 30%;
 }
 
-div.relativo{
-    position: relative;
-    top: 10px;
-    left: 10px;
-    padding: 15px;
-    border: 3px solid blueviolet;
-    background-color: whitesmoke;
+img.imagen{
+    width: 100%;
+    opacity: .2;
 }
-div.absoluto{
+div.centro{
     position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 112px;
-    border: 3px solid cornflowerblue;
-    background-color: whitesmoke;
-    z-index: -1;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    /*border: 1px solid blue;*/
+    font-size: 25px;
+
 }
