@@ -3,10 +3,8 @@ h1{
     color: crimson;
 }
 div{
-    position: relative;
-    top: 100px;
-    left: 50px;
-    max-width: 50%;
+    position: fixed;
+    bottom: 0;
+    right: 0%;
     border: 3px solid firebrick;
-    margin: auto;
 }
