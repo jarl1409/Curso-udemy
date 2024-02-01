@@ -1,25 +1,22 @@
 h1{
     text-align: center;
-    color: crimson;
+    color: #457b9d;
 }
 
 div.contenedor{
-    width: 30%;
-    height: 100px;
+    width: 80%;
+    height: 20%;
     overflow: auto;
-}
-div.contenedor.flotado{
-    float: left;
-}
-div.contenedor.flotado.contenedor1{
-    border: 3px dashed greenyellow;
-}
-div.contenedor.flotado.contenedor2{
-    border: 3px dashed cornflowerblue;
-    float: right;
-}
-div.contenedor.contenedor3{
-    clear: both;
-    border: 3px dashed darkorange;
     margin: auto;
+    border: 3px dashed #a8dadc;
+}
+span{
+    font-weight: bolder;
+    font-style: italic;
+    font-size: larger;
+    background-color:#a8dadc ;
+    border: 1px solid #457b9d;
+    height: 50px;
+    padding: 5px;
+    display: inline-block;
 }
