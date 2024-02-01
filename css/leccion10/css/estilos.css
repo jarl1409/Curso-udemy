@@ -4,22 +4,12 @@ h1{
 }
 
 div.contenedor{
-    position: relative;
     border: 3px dashed greenyellow;
     margin: auto;
     width: 30%;
-}
-
-img.imagen{
-    width: 100%;
-    opacity: .2;
-}
-div.centro{
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    /*border: 1px solid blue;*/
-    font-size: 25px;
-
+    height: 100px;
+    /*overflow: visible;*/
+    /*overflow: hidden;*/
+    /*overflow: scroll;*/
+    overflow: auto;
 }
