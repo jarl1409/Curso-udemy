@@ -12,22 +12,10 @@ div.contenedor{
     color: #457b9d;
     text-align: center;
 }
+ img{
+    opacity: .5;
+ }
 
-div.contenedor p::selection{
-    color: red;
-    background-color: yellow;
-}
-
-div.contenedor p::first-line{
-    font-variant: small-caps;
-    color: red;
-}
-div.contenedor p::first-letter{
-    font-size: 1.5em;
-}
-div.contenedor p::before{
-    content: "- ";
-}
-div.contenedor p::after{
-    content: " -";
-}
+ img:hover{
+    opacity: 1;
+ }
