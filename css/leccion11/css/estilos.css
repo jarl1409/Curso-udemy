@@ -25,3 +25,9 @@ div.contenedor p::first-line{
 div.contenedor p::first-letter{
     font-size: 1.5em;
 }
+div.contenedor p::before{
+    content: "- ";
+}
+div.contenedor p::after{
+    content: " -";
+}
