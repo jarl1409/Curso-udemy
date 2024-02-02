@@ -13,21 +13,15 @@ div.contenedor{
     text-align: center;
 }
 
-div.contenedor:hover{
-    background-color: #457b9d;
-    color: #f1faee ;
+div.contenedor p::selection{
+    color: red;
+    background-color: yellow;
 }
 
-div.contenedor.oculto p{
-    display: none;
-}
-
-div.contenedor.oculto:hover p{
-    display: block;
-    background-color: #a8dadc;
-    color: #023e8a;
-    padding: 15px;
-}
-div.contenedor.primero p:first-child{
+div.contenedor p::first-line{
     font-variant: small-caps;
+    color: red;
+}
+div.contenedor p::first-letter{
+    font-size: 1.5em;
 }
