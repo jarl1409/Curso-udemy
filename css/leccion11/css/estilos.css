@@ -19,3 +19,10 @@ div.contenedor.descendiente p{
 div.contenedor.hijo > p{
     background-color: #ffc6ff;
 }
+
+div.contenedor.adyacente + p{
+    background-color: #caffbf;
+}
+div.contenedor.hermano ~ p{
+    background-color: #9bf6ff;
+}
