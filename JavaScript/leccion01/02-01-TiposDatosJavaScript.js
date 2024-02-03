@@ -1,69 +1,17 @@
-// Ejemplos de tipos de 
-// datos en JavaSrcipt
+var nombre = "juan";
+var apelldio = "perez";
+var nombreCompleto = nombre +" "+ apelldio;
+console.log(nombreCompleto);
 
-// Tipo de dato String
-var nombre = "Carlos";
+var nombreCompleto2 = "carlos" + " " + "laura";
+console.log(nombreCompleto2);
 
-console.log(typeof nombre);
-
-nombre = 10.5;
-console.log(typeof nombre);
-
-
-// Tipo de dato numerico
-var numero = "1000"
-console.log(numero)
-
-// Tipo de dato Object
-
-var objeto = {
-    nombre : "juan",
-    apellido : "Perez",
-    telefono : "1212123441"
-}
-
-console.log(typeof objeto)
-
-// Tipo de dato boolean (true,false)
-
-var bandera = false;
-console.log(typeof bandera);
-
-// Tipo de dato function
-function mifuncion(){}
-console.log(typeof mifuncion)
-
-// Tipo de dato Symbol
-var simbolo = Symbol("mi simbolo");
-console.log(typeof simbolo);
-
-// Tipo clase es una function
-class Persona{
-    constructor(nombre, apellido){
-    this.nombre = nombre;
-    this.apellido = apellido;
-    }
-}
-
-console.log(typeof Persona);
-
-// Tipo de dato undefined
-var x;
+var x = nombre + 219 + 1;
 console.log(x);
 
-x = undefined;
+x = nombre + (2 + 4);
 console.log(x);
 
-// null = ausencia de valor
-var y = null
-console.log(y);
+x = 2 + 4 + nombre;
+console.log(x);
 
-
-var autos = ["BMW","Audi","Volvo"]
-console.log(autos);
-console.log(typeof autos);
-
-
-var z = "";
-console.log(z);
-console.log(typeof z)
