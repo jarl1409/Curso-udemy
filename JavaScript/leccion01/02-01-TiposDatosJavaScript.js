@@ -1,7 +1,8 @@
-let nombre;
+let nombreCompleto = "Juan perez";
+console.log(nombreCompleto);
 
-nombre = "juan"; 
-console.log(nombre);
+let x,y;
 
-const apellido = "perez";
-// apellido = "lara"; No se puede dar otro valor a const
+x = 10, y = 20;
+let z = x + y;
+console.log(z);
