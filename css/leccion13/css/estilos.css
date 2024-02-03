@@ -6,6 +6,10 @@ h1{
 div.contenedor{
     display: flex;
     background-color: #560bad;
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;
     
 }
 
@@ -15,9 +19,6 @@ div.contenedor > p{
     margin: 20px;
     padding: 15px;
     font-size: 1.5em;
-    border: 3px solid darkblue;
-    border-radius: 25px;
-    text-align: center;
     padding: 7px;
 
 }
