@@ -1,24 +1,14 @@
-let a = 3, b = 2;
-let z = a + b;
+let a = 3, b = 2, c = 1,  d = 4;
 
-// Incremento
-// Pre-incremento (el operador ++ antes de la variable)
-z = ++a;
-console.log(a);
+let z = a * b + c / d;
+// Se multiplica y divide primero, luego se suman esos dos resultados
 console.log(z);
 
-// Post-incremento (el operador ++ despues de la variable)
-z = b++;
-console.log(b);
+
+z = c + a * b / d;
 console.log(z);
 
-// Decremento
-// Predecremento
-z = --a;
-console.log(a);
+z = (c + a) * b / c;
+// (1+3) * 2 / 1 = 8
 console.log(z);
 
-// Postdecremento
-z = b--;
-console.log(b);
-console.log(z);
