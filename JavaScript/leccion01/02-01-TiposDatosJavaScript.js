@@ -1,17 +1,7 @@
-var nombre = "juan";
-var apelldio = "perez";
-var nombreCompleto = nombre +" "+ apelldio;
-console.log(nombreCompleto);
+let nombre;
 
-var nombreCompleto2 = "carlos" + " " + "laura";
-console.log(nombreCompleto2);
+nombre = "juan"; 
+console.log(nombre);
 
-var x = nombre + 219 + 1;
-console.log(x);
-
-x = nombre + (2 + 4);
-console.log(x);
-
-x = 2 + 4 + nombre;
-console.log(x);
-
+const apellido = "perez";
+// apellido = "lara"; No se puede dar otro valor a const
