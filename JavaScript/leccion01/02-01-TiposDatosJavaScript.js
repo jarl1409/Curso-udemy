@@ -23,3 +23,37 @@ var objeto = {
 }
 
 console.log(typeof objeto)
+
+// Tipo de dato boolean (true,false)
+
+var bandera = false;
+console.log(typeof bandera);
+
+// Tipo de dato function
+function mifuncion(){}
+console.log(typeof mifuncion)
+
+// Tipo de dato Symbol
+var simbolo = Symbol("mi simbolo");
+console.log(typeof simbolo);
+
+// Tipo clase es una function
+class Persona{
+    constructor(nombre, apellido){
+    this.nombre = nombre;
+    this.apellido = apellido;
+    }
+}
+
+console.log(typeof Persona);
+
+// Tipo de dato undefined
+var x;
+console.log(x);
+
+x = undefined;
+console.log(x);
+
+// null = ausencia de valor
+var y = null
+console.log(y);
