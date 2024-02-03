@@ -4,7 +4,10 @@
 // Tipo de dato String
 var nombre = "Carlos";
 
-console.log(nombre);
+console.log(typeof nombre);
+
+nombre = 10.5;
+console.log(typeof nombre);
 
 
 // Tipo de dato numerico
@@ -19,4 +22,4 @@ var objeto = {
     telefono : "1212123441"
 }
 
-console.log(objeto)
+console.log(typeof objeto)
