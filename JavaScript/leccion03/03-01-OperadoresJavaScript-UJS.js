@@ -1,21 +1,13 @@
-let miNumero = "111";
-
-let edad = Number(miNumero);
-console.log(edad);
-
-if(isNaN(edad)){
-    console.log("No es un numero");
-}
-else{
-    if(edad >= 18){
-        console.log("Puede votar")
-    }
-    else{
-        console.log("Muy joven para votar");
-    
-    }
-}
+let x = 5;
+let y = 10;
+let z = ++x + y--;
+console.log(x);
+console.log(y);
+console.log(z);
 
 
-let resultado = (edad >= 18)? "Puede votar" : "Muy joven para votar";
+let resultado = 4 +5 * 6 / 3;
+console.log(resultado);
+
+resultado = (4 +5) * 6 / 3;
 console.log(resultado);
