@@ -1,8 +1,9 @@
-let edad = 20, adulto = 18;
+let a = 5;
+let ValMin= 0, ValMax = 10;
 
-if ( edad >= adulto){
-    console.log("Es un adulto");
+if ( a >= ValMin && a <= ValMax){
+    console.log( "Dentro del rango");
 }
 else{
-    console.log(" Es menor de edad");
+    console.log("Fuera de rango");
 }
