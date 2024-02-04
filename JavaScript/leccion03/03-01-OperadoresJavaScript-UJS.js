@@ -1,8 +1,8 @@
-let a = 9;
+let edad = 20, adulto = 18;
 
-if (a % 2 == 0){
-    console.log("Es un numero par");
+if ( edad >= adulto){
+    console.log("Es un adulto");
 }
-else {
-    console.log("Es un numero impar");
+else{
+    console.log(" Es menor de edad");
 }
