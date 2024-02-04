@@ -1,21 +1,10 @@
-let a = 1
-console.log(a);
+let a = 3, b = 2, c="3";
 
-a += 3; //  a
-console.log(a);
+let z = a ==c;
+console.log(z)
 
-a-= 2; //a = a -2
-console.log(a);
+z= a ==b;
+console.log(z);
 
-a *= 3;
-console.log(a);
-
-a /= 2;
-console.log(a);
-
-a %= 4;
-console.log(a)
-
-a **= 4;
-console.log(a);
-
+z = a === c;
+console.log(z);
