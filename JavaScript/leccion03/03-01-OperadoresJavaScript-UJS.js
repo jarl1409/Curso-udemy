@@ -1,6 +1,16 @@
-let resultado = (3>2) ? "Verdadero" : "Falso";
-console.log(resultado);
+let miNumero = "20";
 
-let numero = 9;
-resultado = (numero % 2 == 0) ? "Número par" : "Número impar";
+// console.log(miNumero);
+
+let edad = Number(miNumero);
+// console.log(typeof edad);
+if(edad >= 18){
+    console.log("Puede votar")
+}
+else{
+    console.log("Muy joven para votar");
+
+}
+
+let resultado = (edad >= 18)? "Puede votar" : "Muy joven para votar";
 console.log(resultado);
