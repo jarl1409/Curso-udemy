@@ -1,14 +1,21 @@
-let a = 3, b = 2, c = 1,  d = 4;
+let a = 1
+console.log(a);
 
-let z = a * b + c / d;
-// Se multiplica y divide primero, luego se suman esos dos resultados
-console.log(z);
+a += 3; //  a
+console.log(a);
 
+a-= 2; //a = a -2
+console.log(a);
 
-z = c + a * b / d;
-console.log(z);
+a *= 3;
+console.log(a);
 
-z = (c + a) * b / c;
-// (1+3) * 2 / 1 = 8
-console.log(z);
+a /= 2;
+console.log(a);
+
+a %= 4;
+console.log(a)
+
+a **= 4;
+console.log(a);
 
