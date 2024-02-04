@@ -8,3 +8,9 @@ console.log(z);
 
 z = a === c;
 console.log(z);
+
+z= a != c;
+console.log(z)
+
+z= a !== c;
+console.log(z);
