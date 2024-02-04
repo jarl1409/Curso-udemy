@@ -1,13 +1,8 @@
-let a = 3, b = 2, c="3";
+let a = 9;
 
-let z = a < b;
-console.log(z);
-
-z = a <=b;
-console.log(z);
-
-z = a > b;
-console.log(z);
-
-z = a >= b;
-console.log(z);
+if (a % 2 == 0){
+    console.log("Es un numero par");
+}
+else {
+    console.log("Es un numero impar");
+}
