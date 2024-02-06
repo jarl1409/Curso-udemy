@@ -1,16 +1,19 @@
-let hora = "10am";
+let hora = 11;
 let mensaje;
 
-if ( hora == "6am" || hora == "7am" || hora == "8am" || hora == "9am" || hora == "10am" || hora == "11am"){
-    mensaje = "Buenos dias <3"
+if ( hora >= 6 && hora <= 11){
+    mensaje = "Buenos dias"
 }
-else if ( hora == "12pm" || hora == "13pm" || hora == "14pm" || hora == "15pm" || hora == "16pm" || hora == "17pm" || hora == "18pm"){
-    mensaje = "Buenas tardes <3"
+else if ( hora >= 12 && hora <= 18 ){
+    mensaje = "Buenas tardes"
 }
-else if ( hora == "19pm" || hora == "20pm" || hora == "21pm" || hora == "22pm" || hora == "23pm" || hora == "24pm"){
-    mensaje = "Buenas noches <3"
+else if (hora >= 19 && hora <= 24){
+    mensaje = "Buenas noches"
 }
-if ( hora == "0am" || hora == "1am" || hora == "2am" || hora == "3am" || hora == "4am" || hora == "5am"){
-    mensaje = "Durmiendo UnU"
+else if ( hora >= 0 && hora < 6){
+    mensaje = " Durmiendo"
+}
+else{
+    mensaje = "Valor incorrecto"
 }
 console.log(mensaje);
