@@ -1,22 +1,25 @@
-let numero = 3;
+let mes = 11;
 
-let numeroTexto = "Valor desconocido";
+let estacion = "Estación desconocida";
 
-switch( numero ){
-    case 1:
-        numeroTexto = "Número uno";
+switch ( mes ){
+    case 1: case 2: case 12:
+        estacion = "Invierno";
         break;
-    case 2:
-        numeroTexto = "Número dos";
+    case 3: case 4: case 5:
+        estacion = "Primavera";
         break;
-    case 3:
-        numeroTexto = "Número tres";
+    case 6: case 7: case 8:
+        estacion = "Verano"
         break;
-    case 4:
-        numeroTexto = "Número cuatro";
+    case 9: case 10: case 11:
+        estacion = "Otoño"
+        break;
+    case "sePuede":
+        estacion = "Sera que si?"
         break;
     default:
-        numeroTexto = "Caso no encontrado";
+        estacion = "Valor incorrecto"
 }
 
-console.log(numeroTexto);
+console.log(estacion);
