@@ -1,17 +1,22 @@
-let numero = 34;
+let mes = 1;
+let estacion;
 
-if( numero == 1 ){
-    console.log("Número uno");
+if(mes == 1 || mes == 2 || mes == 12){
+    estacion = "invierno";
 }
-else if (numero == 2){
-    console.log("Número dos");
+else if (mes ==3 || mes == 4 || mes == 5){
+    estacion = "primavera";
 }
-else if( numero == 3){
-    console.log("Número tres");
+
+else if ( mes ==6 || mes == 7 || mes == 8){
+    estacion = "verano"
 }
-else if( numero == 4){
-    console.log("Número cuatro");
+
+else if ( mes == 9 || mes == 10 || mes == 11){
+    estacion = "otoño"
 }
 else{
-    console.log("Número desconocido");
+    estacion = "Valor incorrecto"
 }
+
+console.log(estacion);
