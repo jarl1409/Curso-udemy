@@ -1,19 +1,22 @@
-let hora = 11;
-let mensaje;
+let numero = 3;
 
-if ( hora >= 6 && hora <= 11){
-    mensaje = "Buenos dias"
+let numeroTexto = "Valor desconocido";
+
+switch( numero ){
+    case 1:
+        numeroTexto = "Número uno";
+        break;
+    case 2:
+        numeroTexto = "Número dos";
+        break;
+    case 3:
+        numeroTexto = "Número tres";
+        break;
+    case 4:
+        numeroTexto = "Número cuatro";
+        break;
+    default:
+        numeroTexto = "Caso no encontrado";
 }
-else if ( hora >= 12 && hora <= 18 ){
-    mensaje = "Buenas tardes"
-}
-else if (hora >= 19 && hora <= 24){
-    mensaje = "Buenas noches"
-}
-else if ( hora >= 0 && hora < 6){
-    mensaje = " Durmiendo"
-}
-else{
-    mensaje = "Valor incorrecto"
-}
-console.log(mensaje);
+
+console.log(numeroTexto);
