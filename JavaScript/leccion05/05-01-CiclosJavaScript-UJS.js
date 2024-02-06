@@ -1,7 +1,13 @@
 let contador = 0;
 
-while (contador < 3 ){
+// while (contador < 3 ){
+//     console.log(contador);
+//     contador++;
+// }
+// console.log("Fin ciclo while");
+
+do{
     console.log(contador);
     contador++;
-}
-console.log("Fin ciclo while");
+}while(contador <3);
+console.log("Fin ciclio do while");
