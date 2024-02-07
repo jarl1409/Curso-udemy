@@ -1,24 +1,9 @@
-// Declaración de la función
-function miFuncion( a, b ){
-    console.log(arguments.length); 
-    return a + b;
-}
-
-// Llamando a la función
-let resultado = miFuncion(2, 3);
-console.log(resultado);
-
 // declaración de una funtion de tipo expresión
 let sumar = function(a, b){return a+ b};
 
 resultado = sumar (1, 2);
 console.log(resultado);
 
-(function (a, b){
-    console.log("Ejecutando la función: " + (a + b));
-})(3, 4);
-
-console.log(typeof miFuncion);
-
-var miFuncionTexto = miFuncion.toString();
-console.log(miFuncionTexto);
+const sumarFuncionTipoFlecha = (a, b) => a + b;
+resultado = sumarFuncionTipoFlecha(3, 5);
+console.log(resultado);
