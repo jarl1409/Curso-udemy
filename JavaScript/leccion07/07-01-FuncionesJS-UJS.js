@@ -1,5 +1,6 @@
 // Declaración de la función
 function miFuncion( a, b ){
+    console.log(arguments.length); 
     return a + b;
 }
 
@@ -16,3 +17,8 @@ console.log(resultado);
 (function (a, b){
     console.log("Ejecutando la función: " + (a + b));
 })(3, 4);
+
+console.log(typeof miFuncion);
+
+var miFuncionTexto = miFuncion.toString();
+console.log(miFuncionTexto);
