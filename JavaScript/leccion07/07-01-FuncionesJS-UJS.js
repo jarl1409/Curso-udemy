@@ -1,3 +1,4 @@
+// Hoisting
 miFuncion(4, 2);
 
 // Declaración de la función
