@@ -1,5 +1,3 @@
-let x = 10;
-
 let persona ={
     nombre: "Juan",
     apellido: "Perez",
@@ -10,18 +8,13 @@ let persona ={
     }
 }
 
-console.log(persona.nombreCompleto());
-
 console.log(persona.nombre);
-console.log(persona.edad);
-console.log(persona.apellido);
-console.log(persona.email);
+console.log(persona["nombre"]);
 
-console.log(persona);
+// for in
+for( nombrePropiedad in persona ){
+    console.log( nombrePropiedad );
+    console.log( persona [nombrePropiedad]);
+    
 
-
-let persona2 = new Object();
-persona2.nombre = "Carlos";
-persona2.direccion = "Saturno 15";
-persona2.telefono = "12333124";
-console.log(persona2);
+}
