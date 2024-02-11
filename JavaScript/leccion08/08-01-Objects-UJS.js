@@ -18,3 +18,10 @@ console.log(persona.apellido);
 console.log(persona.email);
 
 console.log(persona);
+
+
+let persona2 = new Object();
+persona2.nombre = "Carlos";
+persona2.direccion = "Saturno 15";
+persona2.telefono = "12333124";
+console.log(persona2);
