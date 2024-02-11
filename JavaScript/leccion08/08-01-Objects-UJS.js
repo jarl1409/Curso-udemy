@@ -8,13 +8,10 @@ let persona ={
     }
 }
 
-console.log(persona.nombre);
-console.log(persona["nombre"]);
+persona.tel = "33211233";
 
-// for in
-for( nombrePropiedad in persona ){
-    console.log( nombrePropiedad );
-    console.log( persona [nombrePropiedad]);
-    
+console.log(persona);
 
-}
+delete persona.tel;
+
+console.log(persona);
