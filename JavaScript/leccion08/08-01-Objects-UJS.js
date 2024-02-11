@@ -18,3 +18,23 @@ padre.nombre = "carlos";
 console.log(padre);
 console.log(madre);
 
+
+var miObjeto = new Object();
+let miObjeto2 = {};
+
+let miCadena1 = new String("Hola");
+let miCadena2 = "Hola";
+
+console.log(miCadena2);
+
+let miNumero1 = new Number(1);
+let miNumero2 = 1;
+
+let miBoolean = new Boolean(false);
+let miBoolean1 = false;
+
+let miArreglo1 = new Array();
+let miArreglo2 = [];
+
+let miFuncion = new Function();
+let miFuncion1 = function(){};
