@@ -8,33 +8,13 @@ function Persona(nombre, apellido, email){
     }
 }
 
+Persona.prototype.tel = "312233123"
+
 let padre = new Persona("Juan", "Perez", "Jpereasdas12s@mail.com");
-console.log(padre.nombreCompleto());
+padre.tel = "123412312"
 
 let madre = new Persona ("Laura", "Quintero", "Lquintero@email.com");
-console.log(madre.nombreCompleto());
+madre.tel = "341232345"
 
-padre.nombre = "carlos";
-console.log(padre);
-console.log(madre);
-
-
-var miObjeto = new Object();
-let miObjeto2 = {};
-
-let miCadena1 = new String("Hola");
-let miCadena2 = "Hola";
-
-console.log(miCadena2);
-
-let miNumero1 = new Number(1);
-let miNumero2 = 1;
-
-let miBoolean = new Boolean(false);
-let miBoolean1 = false;
-
-let miArreglo1 = new Array();
-let miArreglo2 = [];
-
-let miFuncion = new Function();
-let miFuncion1 = function(){};
+console.log(padre.tel);
+console.log(madre.tel);
