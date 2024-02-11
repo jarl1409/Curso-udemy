@@ -1,10 +1,12 @@
-let resultado = sumarTodo(5, 4 , 13, 10, 9);
-console.log( resultado );
+// Tipos primitivos
+let x = 10;
 
-function sumarTodo(){
-    let suma = 0;
-    for(let i = 0; i < arguments.length; i++){
-        suma += arguments[i]; //suma = suma + arguments [i]
-    }
-    return suma;
+function cambiarValor(a){
+    a = 20;
 }
+
+// Paso por valor
+cambiarValor (x);
+console.log(x);
+
+console.log(a);
