@@ -1,23 +1,17 @@
-let persona ={
-    nombre: "Juan",
-    apellido: "Perez",
-    email: "jperez@email.com",
-    edad: 20,
-    idioma: "es",
-    get lang(){
-        return this.idioma.toUpperCase();
-    },
-    set lang( lang ){
-        this.idioma = lang.toUpperCase();
-    },
-    get nombreCompleto(){
-        return this.nombre + " " + this.apellido;
-    }
+// Funcion contructor de objetos de tipo persona
+function Persona(nombre, apellido, email){
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.email = email;
 }
-console.log(persona.idioma);
-console.log(persona.lang);
 
-persona.lang = "en"
+let padre = new Persona("Juan", "Perez", "Jpereasdas12s@mail.com");
+console.log(padre);
 
-console.log(persona.lang);
-console.log( persona.idioma);
+let madre = new Persona ("Laura", "Quintero", "Lquintero@email.com");
+console.log(madre);
+
+padre.nombre = "carlos";
+console.log(padre);
+console.log(madre);
+
