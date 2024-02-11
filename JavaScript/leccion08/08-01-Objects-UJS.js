@@ -4,8 +4,13 @@ let persona ={
     nombre: "Juan",
     apellido: "Perez",
     email: "jperez@email.com",
-    edad: 20
+    edad: 20,
+    nombreCompleto: function(){
+        return this.nombre + " " + this.apellido;
+    }
 }
+
+console.log(persona.nombreCompleto());
 
 console.log(persona.nombre);
 console.log(persona.edad);
