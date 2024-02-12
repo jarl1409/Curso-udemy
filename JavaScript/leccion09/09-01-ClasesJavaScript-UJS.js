@@ -1,5 +1,3 @@
-
-
 class Persona{
     constructor(nombre, apellido){
         this._nombre = nombre;
@@ -30,7 +28,7 @@ class Persona{
         // padre o de tipo hijo.
         return this.nombreCompleto();
     }
-}
+   }
 
     class Empleado extends Persona{
         constructor (nombre, apellido, departamento){
