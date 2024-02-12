@@ -1,3 +1,5 @@
+
+
 class Persona{
     constructor(nombre, apellido){
         this._nombre = nombre;
@@ -21,7 +23,14 @@ class Persona{
     nombreCompleto(){
         return this._nombre + " " + this._apellido
     }
+    // sobreescribiendo el  metodo de la clase padre (object)
+    toString(){
+        //Se aplica poliformismo (multiples formas de tiempo de ejeción)
+        // El metodo que se ejecuta depende si es una referencia de tipo
+        // padre o de tipo hijo.
+        return this.nombreCompleto();
     }
+}
 
     class Empleado extends Persona{
         constructor (nombre, apellido, departamento){
@@ -47,3 +56,6 @@ class Persona{
     console.log(empleado1);
 // Hereda los metodo get y set de la clase padre (Persona)
     console.log(empleado1.nombreCompleto());
+
+
+console.log(empleado1.toString());
