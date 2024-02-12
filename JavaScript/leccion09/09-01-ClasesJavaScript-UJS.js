@@ -34,6 +34,10 @@ class Persona{
         set departamento(departamento){
             this._departamento = departamento;
         }
+        // Sobreescritura
+        nombreCompleto(){
+            return super.nombreCompleto() + ", " + this._departamento + ".";
+        }
     }
 
     let persona1 = new Persona("Carlos", "Perez");
@@ -43,4 +47,3 @@ class Persona{
     console.log(empleado1);
 // Hereda los metodo get y set de la clase padre (Persona)
     console.log(empleado1.nombreCompleto());
-    
