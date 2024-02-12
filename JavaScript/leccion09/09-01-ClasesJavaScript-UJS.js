@@ -1,8 +1,3 @@
-
-// No es posible crear objetos antes de haber declarado la clase
-// No se aplica el concepto de hoisting
-// let persona2 = new Persona();
-
 class Persona{
     constructor(nombre, apellido){
         this._nombre = nombre;
@@ -16,10 +11,31 @@ class Persona{
     set nombre(nombre){
         this._nombre = nombre;
     }
+    get apellido(){
+        return this.apellido;
     }
-let persona1 = new Persona("Juan", "Perez");
-persona1.nombre = "Juan Carlos"; //Set nombre ("Juan Carlos")
-console.log( persona1.nombre ); //Set nombre
+    set apellido(apellido){
+    this._apellido = apellido
+    }
+    }
 
-let persona2 = new Persona("Carla", "Juarez");
-console.log(persona2);
+    class Empleado extends Persona{
+        constructor (nombre, apellido, departamento){
+            super(nombre, apellido);//Llamar constructor de la clase padre
+            this._departamento = departamento;
+        }
+        get departamento(){
+            return this._departamento;
+        }
+        set departamento(departamento){
+            this._departamento = departamento;
+        }
+    }
+
+    let persona1 = new Persona("Carlos", "Perez");
+    console.log(persona1);
+
+    let empleado1 = new Empleado("Maria", "Jimenez", "Sistemas");
+    console.log(empleado1);
+// Hereda los metodo get y set de la clase padre (Persona)
+    console.log(empleado1.nombre);
