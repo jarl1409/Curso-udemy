@@ -25,9 +25,7 @@ class Producto{
         return this._precio=precio;
     }
     toString(){
-        return `${this._idProducto} 
-        Descripción: ${this._nombre} 
-        Precio: $${this.precio}`;
+        return `${this._idProducto} Descripción: ${this._nombre} Precio: $${this.precio}`;
     }
 }
 
@@ -41,7 +39,7 @@ class Orden{
     constructor(){
         this._idOrden = ++Orden.contadorOrdenes;
         this._productos=[];
-        this._contadorProductosAgregados= 0;
+        // this._contadorProductosAgregados= 0;
     }
     get idOrden(){
         return this._idOrden;
@@ -58,23 +56,34 @@ class Orden{
 
     calcularTotal(){
         let totalVenta = 0;
-        for(let producto; off; this._productos){
+        for(let producto of this._productos){
             totalVenta += producto.precio;//totalVenta = totalVenta + producto.precio
         }
+        return totalVenta;
     }
 
     mostrarOrden(){
-        let productoOrden = '';
+        let mostrarOrden = '';
         for( let producto of this._productos){
-            productosOrden += producto.toString()+ ' ';
+            mostrarOrden += '\n{' + producto.toString()+ '} ';
         }
 
-        console.log(`Orden: ${this._idOrden} Total: ${this.calcularTotal()}, Productos: ${productoOrden}`);
+        console.log(`Orden: ${this._idOrden} Total: $${this.calcularTotal()}, Productos: ${mostrarOrden}`);
     }
 }
 
 let producto1 = new Producto('Pantalón', 200);
 let producto2 = new Producto('Camisa', 100);
+let producto3 = new Producto('Cinturon', 50);
 
-console.log(producto1.toString());
-console.log(producto2.toString());
+let orden1 = new Orden();
+orden1.agregarProducto(producto1);
+orden1.agregarProducto(producto2);
+orden1.mostrarOrden();
+
+let orden2 = new Orden();
+orden2.agregarProducto(producto3);
+orden2.agregarProducto(producto2);
+orden2.agregarProducto(producto2);
+orden2.agregarProducto(producto1);
+orden2.mostrarOrden();
