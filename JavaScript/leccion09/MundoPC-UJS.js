@@ -46,14 +46,19 @@ class Teclado extends DispositivoEntrada{
         super(tipoEntrada, marca);
         this._idTeclado = ++Teclado.contadorTeclados;
     }
+    get idTeclado(){
+        return this._idTeclado;
+    }
     toString(){
-        return 'IdTeclado: ' + this._idTeclado + ', ' + 'tipoEntrada: '
-        + this._tipoEntrada+ ', ' + 'Marca: ' + this._marca +'.';
+        return `Teclado: [idTeclado: ${this._idTeclado}, tipoEntrada: ${this._tipoEntrada}, marca: ${this._marca}]`;
     }
 }
 
 let teclado1 = new Teclado('Bluetooth', 'VSG');
+let teclado2 = new Teclado('USB','Acer');
 console.log(teclado1.toString());
+console.log(teclado2.toString());
+
 
 class Monitor{
     static contadorMonitores = 0;
