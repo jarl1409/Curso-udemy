@@ -2,10 +2,20 @@ class Persona{
 
     static contadorPersonas = 0;
 
+    static get MAX_OBJ(){
+        return 5;
+    }
+
     constructor(nombre, apellido){
         this._nombre = nombre;
         this._apellido = apellido;
-        this.idPersona = ++Persona.contadorPersonas;
+        
+        if(Persona.contadorPersonas < Persona.MAX_OBJ){
+            this.idPersona = ++Persona.contadorPersonas;
+        }
+        else{
+            console.log("se ha superado el máximo de objetos permitidos")
+        }
     }
     
     get nombre(){
@@ -69,3 +79,13 @@ class Persona{
     let persona2 = new Persona("Karla", "Ramirez", );
     console.log(persona2.toString());
     console.log(Persona.contadorPersonas);
+
+    console.log(Persona.MAX_OBJ);
+    Persona.MAX_OBJ = 10;
+    console.log(Persona.MAX_OBJ);
+
+    let persona3 = new Persona ("Mariano", "Lara");
+    let persona4 = new Persona ("Armando", "Toledo");
+    let persona5 = new Persona ("ASDAS", "AJSDAS");
+    console.log(persona5.toString());
+
