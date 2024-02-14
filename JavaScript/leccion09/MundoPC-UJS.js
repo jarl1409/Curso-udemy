@@ -88,46 +88,25 @@ class Computadora{
     constructor(nombre, monitor, teclado, raton){
         this._idComputadora = ++Computadora.contadorComputadoras;
         this._nombre = nombre;
-        this._monitor = null;
-        this._teclado = null;
-        this._raton = null;
+        this._monitor = monitor;
+        this._teclado = teclado;
+        this._raton = raton;
     }
     get idComputadora(){
         return this._idComputadora;
     }
 
-    get nombre(){
-        return this._nombre;
-    }
-    set nombre(nombre){
-        this._nombre;
-    }
-    get monitor(){
-        return this._monitor;
-    }
-    set monitor(monitor){
-        this._monitor;
-    }
-    get teclado(){
-        return this._teclado;
-    }
-    set teclado(teclado){
-        this._teclado;
-    }
-    get raton(){
-        return this._raton;
-    }
-    set raton(raton){
-        this._raton;
-    }
     toString(){
-        return 'Computadora ' + this._idComputadora + ': '
-        + this._nombre + ' ' + this._monitor + ' ' + this._raton + ' ' + this._teclado;
+        return `Computadora ${this._idComputadora}: ${this._nombre} \n ${this._monitor} \n ${this._raton} \n ${this._teclado}`;
     }
 }
 
-let computadora1 = new Computadora('HP');
+
+let computadora1 = new Computadora('HP', monitor1, teclado2, raton2);
+let computadora2 = new Computadora('Armada', monitor2, teclado2, raton2);
 console.log(computadora1.toString());
+console.log(computadora2.toString());
+
 
 class Orden{
     static contadorOrdenes = 0;
