@@ -114,9 +114,28 @@ class Orden{
         this._idOrden = ++Orden.contadorOrdenes;
         this._computadoras = [];
     } 
-    agregarComputadora(computadora){}
-    mostrarOrden(){}
-    toString(){
-        return 'Orden: ' + this._idOrden + ', ' + this._computadoras;
+    get idOrden(){
+        return this._idOrden;
+    }
+    agregarComputadora(computadora){
+        this._computadoras.push(computadora);
+    }
+    mostrarOrden(){
+        let computadorasOrden = ' ';
+        for ( let computadora of this._computadoras){
+            computadorasOrden += `\n${computadora}`;
+        }
+        console.log(`Orden: ${this._idOrden}, Computadoras: ${computadorasOrden}`);
     }
 }
+
+let orden1 = new Orden();
+orden1.agregarComputadora(computadora1);
+orden1.agregarComputadora(computadora2);
+orden1.agregarComputadora(computadora2);
+orden1.mostrarOrden();
+
+let orden2 = new Orden();
+orden2.agregarComputadora(computadora2);
+orden2.agregarComputadora(computadora1);
+orden2.mostrarOrden();
