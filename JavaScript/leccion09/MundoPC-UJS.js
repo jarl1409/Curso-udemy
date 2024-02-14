@@ -69,30 +69,18 @@ class Monitor{
         this._tamaño = tamaño;
     }
     get idMonitor(){
-        return this._idMonitor
-    }
-
-    get marca(){
-        return this._marca
-    }
-    set marca(marca){
-        this._marca;
-    }
-    get tamaño(){
-        return this._tamaño;
-    }
-    set tamaño(tamaño){
-        this._tamaño;
+        return this._idMonitor;
     }
     toString(){
-        return 'idMonitor: ' + this._idMonitor +
-        ', ' + 'marca: ' + this._marca + ', ' +
-        'tamaño: ' + this._tamaño + '.';
+        return `Monitor: [idMonitor: ${this._idMonitor}, marca: ${this._marca}, tamaño: ${this._tamaño}]`;
     }
 }
 
 let monitor1 = new Monitor('Dell', '27');
+let monitor2 = new Monitor('HP', '15');
 console.log(monitor1.toString());
+console.log(monitor2.toString());
+
 
 class Computadora{
     static contadorComputadoras = 0;
