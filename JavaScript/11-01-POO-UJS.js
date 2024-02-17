@@ -18,9 +18,13 @@ class Gerente extends Empleado{
     }
 }
 
+function imprimir(tipo){
+    console.log(tipo.obtenerDetalles());
+}
+
 let empleado1 = new Empleado('Juan', 3000);
-console.log(empleado1.obtenerDetalles());
-
 let gertente1 = new Gerente('Carlos','5000','sistemas');
-console.log(gertente1.obtenerDetalles());
 
+imprimir( empleado1);
+
+imprimir( gertente1);
