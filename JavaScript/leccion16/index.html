@@ -6,10 +6,16 @@
     <title>Ejemplo DOM con JavaScript</title>
 </head>
 <body>
-    <h1>Ejemplo DOM con JavaScript</h1>
-    <p>Saludos!</p>
+    <h1 id="cabecero">Ejemplo DOM con JavaScript</h1>
+    <p id="parrafo">Saludos!</p>
 <script>
-    console.log('saludos desde JavaScript');
+    let cabecero = document.getElementById('cabecero');
+    console.log(`Valor cabecero: ${cabecero.innerHTML}`);
+    let parrafo = document.getElementById('parrafo');
+    console.log(`Valor parrafo: ${parrafo.innerHTML}`);
+    parrafo.innerHTML = 'Nuevo valor del parrafo';
+    cabecero.innerHTML = 'Nuevo cabecero';
+
 </script>
 </body>
 
