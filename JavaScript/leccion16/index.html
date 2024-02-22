@@ -6,14 +6,13 @@
     <title>Manejo DOM con JavaScript</title>
 </head>
 <body>
-    <h1>Manejo DOM con JavaScript</h1>
+    <h1 id="titulo">Manejo DOM con JavaScript</h1>
     <button onclick="mostrar()">Mostrar</button>
     <br/>
     <script>
-        document.write('Saludos desde JavaScript');
         function mostrar(){
-            document.write('Adios');
-        };
+            document.getElementById('titulo').innerHTML += '<br/>Nuevo titulo';
+        }
     </script>
 
 </body>
