@@ -7,15 +7,14 @@
 </head>
 <body>
     <h1 id="cabecero">Ejemplo DOM con JavaScript</h1>
-    <p id="parrafo">Saludos!</p>
+    <p id="parrafo1">Saludos!</p>
+    <p id="parrafo2">Otro parrafo</p>
 <script>
-    let cabecero = document.getElementById('cabecero');
-    console.log(`Valor cabecero: ${cabecero.innerHTML}`);
-    let parrafo = document.getElementById('parrafo');
-    console.log(`Valor parrafo: ${parrafo.innerHTML}`);
-    parrafo.innerHTML = 'Nuevo valor del parrafo';
-    cabecero.innerHTML = 'Nuevo cabecero';
-
+    let parrafos = document.getElementsByTagName('p');
+    console.log(`Numero de parrafos: ${parrafos.length}`);
+    for(let i=0; i<parrafos.length;i++){
+        console.log(`${i} - ${parrafos[i].innerHTML}`);
+    };
 </script>
 </body>
 
