@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplo DOM con JavaScript</title>
+    <style>
+        .azul{
+            color: blue;
+        }
+    </style>
 </head>
 <body>
-    <h1 id="cabecero">Ejemplo DOM con JavaScript</h1>
-    <p id="parrafo1">Saludos!</p>
-    <p id="parrafo2">Otro parrafo</p>
+    <h1 class="azul">Ejemplo DOM con JavaScript</h1>
+    <p class="azul">Saludos!</p>
+    <p class="azul">Otro parrafo</p>
 <script>
-    let parrafos = document.getElementsByTagName('p');
-    console.log(`Numero de parrafos: ${parrafos.length}`);
-    for(let i=0; i<parrafos.length;i++){
-        console.log(`${i} - ${parrafos[i].innerHTML}`);
-    };
+    let elementos = document.getElementsByClassName('azul');
+    console.log(`No. elementos: ${elementos.length}`);
+    for (let elemento of elementos){
+        console.log(`${elemento.innerHTML}`);
+    }
 </script>
 </body>
 
