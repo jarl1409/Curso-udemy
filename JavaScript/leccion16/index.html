@@ -6,16 +6,18 @@
     <title>Manejo DOM con JavaScript</title>
 </head>
 <body>
-    <h1 onclick= 'cambiarTexto(this)'>Manejo DOM con JavaScript</h1>
+    <h1 id="titulo">Manejo DOM con JavaScript</h1>
     <br/>
+    <div id="mostrar">
+
+    </div>
     <script>
-        function cambiarTexto(titulo){
-            console.log(titulo);
-            console.log(titulo.innerHTML);
-            titulo.innerHTML = 'Cambiamos el titulo';
-            console.log(titulo.innerHTML);
-        
+        document.getElementById('titulo').onclick = cambiarTexto;
+        function cambiarTexto(){
+            document.getElementById('mostrar').innerHTML = 'Nuevo titulo';
         }
+
+        
     </script>
 
 </body>
