@@ -5,23 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manejo DOM con JavaScript</title>
 </head>
-<body onload="entrar()">
+<body>
     <h1 id="titulo">Manejo DOM con JavaScript</h1>
     <br/>
-    <div id="mostrar">
-
-    </div>
+    Nombre: <input type="'texto" onchange="convertir(this)"/>
     <script>
-        function entrar(){
-            alert('entrando a la pagina web');
-            let texto = '';
-            if(navigator.cookieEnabled){
-                texto = 'Las cookies estan habilitadas';
-            }
-            else{
-                texto = 'Cookies estan deshabilitadas';
-            }
-            document.getElementById('mostrar').innerHTML = texto;
+        function convertir(nombreInput){
+            nombreInput.value = nombreInput.value.toUpperCase();
         }
     </script>
 
