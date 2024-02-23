@@ -6,13 +6,17 @@
     <title>Manejo DOM con JavaScript</title>
 </head>
 <body>
-    <h1 id="titulo">Manejo DOM con JavaScript</h1>
+    <h1 id="titulo" onmouseover="rojo(this)" onmouseout="azul(this)">
+        Manejo DOM con JavaScript</h1>
     <br/>
-    Nombre: <input type="'texto" onchange="convertir(this)"/>
     <script>
-        function convertir(nombreInput){
-            nombreInput.value = nombreInput.value.toUpperCase();
+        function rojo(titulo){
+            titulo.style.color = 'red';
         }
+        function azul(titulo){
+            titulo.style.color = 'blue';
+        }
+
     </script>
 
 </body>
