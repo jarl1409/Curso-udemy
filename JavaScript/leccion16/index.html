@@ -6,12 +6,15 @@
     <title>Manejo DOM con JavaScript</title>
 </head>
 <body>
-    <h1 id="titulo">Manejo DOM con JavaScript</h1>
-    <button onclick="mostrar()">Mostrar</button>
+    <h1 onclick= 'cambiarTexto(this)'>Manejo DOM con JavaScript</h1>
     <br/>
     <script>
-        function mostrar(){
-            document.getElementById('titulo').style.color = 'red';
+        function cambiarTexto(titulo){
+            console.log(titulo);
+            console.log(titulo.innerHTML);
+            titulo.innerHTML = 'Cambiamos el titulo';
+            console.log(titulo.innerHTML);
+        
         }
     </script>
 
