@@ -5,19 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manejo DOM con JavaScript</title>
 </head>
-<body>
+<body onload="entrar()">
     <h1 id="titulo">Manejo DOM con JavaScript</h1>
     <br/>
     <div id="mostrar">
 
     </div>
     <script>
-        document.getElementById('titulo').onclick = cambiarTexto;
-        function cambiarTexto(){
-            document.getElementById('mostrar').innerHTML = 'Nuevo titulo';
+        function entrar(){
+            alert('entrando a la pagina web');
+            let texto = '';
+            if(navigator.cookieEnabled){
+                texto = 'Las cookies estan habilitadas';
+            }
+            else{
+                texto = 'Cookies estan deshabilitadas';
+            }
+            document.getElementById('mostrar').innerHTML = texto;
         }
-
-        
     </script>
 
 </body>
