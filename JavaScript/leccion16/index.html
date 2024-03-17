@@ -13,9 +13,13 @@
     <br>
     Apellido: <input type="text" id="apellido"/>
     <script>
-       document.getElementById('nombre').addEventListener('focus', cambiar);
-       document.getElementById('nombre').addEventListener('blur', regresar);
-
+       document.getElementById('nombre').addEventListener('focus', (evento)=>{
+           evento.target.style.background = 'pink';
+       });
+       document.getElementById('nombre').addEventListener('blur', (evento) => {
+        evento.target.style.background = 'white';
+       });
+       
        document.getElementById('apellido').addEventListener('focus', cambiar);
        document.getElementById('apellido').addEventListener('blur', regresar);
        function cambiar(evento){
