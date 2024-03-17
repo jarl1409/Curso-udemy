@@ -6,23 +6,19 @@
     <title>Manejo DOM con JavaScript</title>
 </head>
 <body>
-    <h1 id="titulo" onmousedown="rojo(this)" onmouseup="azul(this)" onclick="verde(this)">
-        Manejo DOM con JavaScript</h1>
+    <h1 id="titulo">Manejo DOM con JavaScript</h1>
     <br/>
+    Nombre: <input type="text" onfocus="cambiar(this)" onblur="regresar(this)"/>
+    <br>
+    <br>
+    Apellido: <input type="text" onfocus="cambiar(this)" onblur="regresar(this)"/>
     <script>
-        function rojo(titulo){
-            console.log('onmousedown');
-            titulo.style.color = 'red';
+        function cambiar (elementoInput){
+            elementoInput.style.background = 'yellow';
         }
-        function azul(titulo){
-            console.log('onmouseup')
-            titulo.style.color = 'blue';
+        function regresar(elementoInput){
+            elementoInput.style.background = 'white';
         }
-        function verde(titulo){
-            console.log('onclick');
-            titulo.style.color = 'green';
-        }
-
     </script>
 
 </body>
