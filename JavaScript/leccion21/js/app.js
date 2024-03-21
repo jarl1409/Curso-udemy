@@ -1,5 +1,5 @@
 const ingresos = [
-    new Ingreso ('salario', 2000),
+    new Ingreso ('salario', 2100),
     new Ingreso ('Venta Coche', 1500)
 ];
 
