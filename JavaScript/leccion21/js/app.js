@@ -43,9 +43,9 @@ let cargarCabecero = () => {
 };
 
 const formatoMoneda = (valor) => {
-  return valor.toLocaleString("en-US", {
+  return valor.toLocaleString("es-CO", {
     style: "currency",
-    currency: "USD",
+    currency: "COP",
     minimumFractionDigits: 2,
   });
 };
