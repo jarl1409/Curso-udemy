@@ -11,8 +11,8 @@ class Dato{
     }
     get valor(){
         return this._valor;
-        }
-        set valor(valor){
+    }
+    set valor(valor){
             this._valor = valor;
-        }
+    }
 }
