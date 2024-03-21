@@ -89,7 +89,7 @@ const crearIngresoHTML = (ingreso) => {
 };
 
 const eliminarIngreso = (id) => {
-  let indiceEliminar = ingresos.findIndex((ingreso) => ingreso.id == id);
+  let indiceEliminar = ingresos.findIndex((ingreso) => ingreso.id === id);
   ingresos.splice(indiceEliminar, 1);
   cargarCabecero();
   cargarIngresos();
@@ -118,10 +118,20 @@ const crearEgresoHTML = (egreso) => {
                         )}</div>
                         <div class="elemento_eliminar">
                             <button class="elemento_eliminar--btn">
-                                <ion-icon name="close-circle-outline"></ion-icon>
+                                <ion-icon name="close-circle-outline" 
+                                onclick='eliminarEgreso(${
+                                  egreso.id
+                                })'></ion-icon>
                             </button>
                         </div>
                     </div>
                 </div>`;
   return egresoHTML;
+};
+
+const eliminarEgreso = (id) => {
+  let indiceEliminar = egresos.findIndex((egreso) => egreso.id === id);
+  egresos.splice(indiceEliminar,1);
+  cargarCabecero();
+  cargarEgresos();
 };
