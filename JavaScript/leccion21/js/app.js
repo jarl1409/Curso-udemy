@@ -131,7 +131,25 @@ const crearEgresoHTML = (egreso) => {
 
 const eliminarEgreso = (id) => {
   let indiceEliminar = egresos.findIndex((egreso) => egreso.id === id);
-  egresos.splice(indiceEliminar,1);
+  egresos.splice(indiceEliminar, 1);
   cargarCabecero();
   cargarEgresos();
+};
+
+let agregarDato = () => {
+  let forma = document.forms["forma"];
+  let tipo = forma["tipo"];
+  let descripcion = forma["descripcion"];
+  let valor = forma["valor"];
+  if (descripcion.value !== "" && valor.value !== "") {
+    if (tipo.value === "ingreso") {
+      ingresos.push(new Ingreso(descripcion.value, +valor.value));
+      cargarCabecero();
+      cargarIngresos();
+    } else if (tipo.value === "egreso") {
+      egresos.push(new Egreso(descripcion.value, +valor.value));
+      cargarCabecero();
+      cargarEgresos();
+    }
+  }
 };
